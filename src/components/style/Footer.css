@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    background-color: rgb(218, 182, 117);
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 30px;
+}
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(218, 182, 117);
+    align-items: center;
+    color: antiquewhite;
+    height: 20px;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+}

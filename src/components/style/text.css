@@ -1,0 +1,7 @@
+.text{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

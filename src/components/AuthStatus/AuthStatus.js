@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth } from "../../context/auth-context";
 import { useNavigate } from "react-router-dom";
+import '../style/text.css'
 
 const AuthStatus = () => {
   const auth = useAuth();
@@ -8,10 +9,10 @@ const AuthStatus = () => {
   console.log(auth);
 
   if (!auth.user) {
-    return <p>Você não está logado. Perdeu parça</p>;
+    return <p className="text"></p>;
   }
   return (
-    <p>
+    <p className="text">
       Bem vindo {auth.user.name}!{" "}
       <button
         onClick={() => {

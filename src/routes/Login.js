@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/style/Login.css"
 import { useAuth } from "../context/auth-context";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -25,14 +26,15 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="container-login">
       <form onSubmit={handleSubmit}>
+        
         <label>
-          email: <input type="email" name="email" />
+          email: <br></br> <input type="email" name="email" />
         </label>
-        <label>
-          senha: <input type="password" name="password" />
-        </label>
+        <label><br></br>
+          senha: <br></br> <input type="password" name="password" />
+        </label><br></br>
         <button type="submit">Enviar</button>
       </form>
     </div>
