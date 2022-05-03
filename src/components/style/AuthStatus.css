@@ -1,0 +1,13 @@
+.aut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26vh;
+    background-color: rgb(219, 185, 121);
+    gap:10px;
+    cursor: pointer;
+}
+p{
+    display: flex;
+    align-items: center;
+}

@@ -1,12 +1,4 @@
-footer{
-    display: flex;
-    background-color: rgb(218, 182, 117);
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    height: 30px;
-}
-.container-footer{
+/* footer{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -14,8 +6,19 @@ footer{
     background-color: rgb(218, 182, 117);
     align-items: center;
     color: antiquewhite;
-    height: 20px;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-}
+    height: 60px;
+} */
+.container-footer{
+   background-color: rgb(218, 182, 117);
+   text-align: center;
+   padding: 10px;
+   font-size: 14px;
+   color: antiquewhite;
+
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+
+}   
+   
+   

@@ -17,8 +17,8 @@ function ProtectedPage() {
   }, []);
 
   return (
-    <div className="container-form">
-    <form>
+    <div >
+    <form className="container-form">
       <h2>Cadastre seu pet aqui.</h2>
       <label htmlFor="nome">Nome: </label>
       <input type="text" name="nome" placeholder=" digite o nome do seu pet" />
@@ -38,7 +38,7 @@ function ProtectedPage() {
       <label htmlFor="url"> Url:   </label>
       <input type="text" name="url" placeholder=" cole aqui o endereço com a foto do seu pet"/>  
       <br></br>
-      <button>Cadastrar</button>  
+      <button className="protect">Cadastrar</button>  
      </form>
   </div>
 

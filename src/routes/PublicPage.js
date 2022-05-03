@@ -3,7 +3,7 @@ import '../components/style/text.css'
 
 function PublicPage() {
   return (
-    <div className="container-list">
+    <div >
       <ul>
         <li>Cachorro</li>
         <li>Felino</li>
