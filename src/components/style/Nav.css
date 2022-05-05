@@ -1,21 +1,17 @@
 .container-nav{
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: rgb(218, 182, 117);
     align-items: center;
-    color: antiquewhite;
+    justify-content: space-between;
+    padding: 10px;
     height: 60px;
-
+    background-color: rgb(190, 159, 113);
     
 }
 
-img{
+.img-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex: 1;
     width: 40px;
     margin: -0px 10px -0px 10px;
     
@@ -23,13 +19,24 @@ img{
 
 .nav{
     cursor: pointer;
+    color: black;
     display: flex;
     flex-direction: row;
-    
-    
+   
+       
 }
 
 li{
-    list-style: none;
-    margin-left: 20px;
-}
+  
+  margin-left: 30px;
+  list-style: none;
+  text-decoration: black;
+  
+  
+  
+ }
+ a{
+     text-decoration: none;
+     color: rgb(10, 10, 9);
+ }
+

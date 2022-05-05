@@ -1,15 +1,5 @@
-/* footer{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: rgb(218, 182, 117);
-    align-items: center;
-    color: antiquewhite;
-    height: 60px;
-} */
 .container-footer{
-   background-color: rgb(218, 182, 117);
+   background-color: rgb(190, 159, 113);
    text-align: center;
    padding: 10px;
    font-size: 14px;
@@ -18,7 +8,6 @@
    bottom: 0;
    position: fixed;
    width: 100%;
-
 }   
    
    

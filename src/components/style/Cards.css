@@ -1,0 +1,17 @@
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px 10px 5px;
+
+    
+ 
+}
+
+.img-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+
+}

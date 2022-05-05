@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth } from "../../context/auth-context";
 import { useNavigate } from "react-router-dom";
-import '../style/text.css'
 import '../style/AuthStatus.css'
 
 const AuthStatus = () => {
@@ -15,6 +14,7 @@ const AuthStatus = () => {
   return (
     <p className="text">
       Bem vindo {auth.user.name}!{" "}
+      <br></br>
       <button className="aut"
         onClick={() => {
           auth.logout(() => navigate("/"));

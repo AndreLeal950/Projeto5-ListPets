@@ -1,44 +1,57 @@
 import React from "react";
-import { useEffect } from "react";
-import { listPets } from "../services/pets";
+import { listPosts } from "../services/post";
 import '../components/style/text.css'
 
 function ProtectedPage() {
-  useEffect(() => {
-    const request = async () => {
-      try {
-        const response = await listPets();
-        console.log(response.data);
-      } catch (error) {
-        console.log("Deu Ruim");
-      }
-    };
-    request();
-  }, []);
+  const onSubmit = async (data) => {
+    try {
+      
+      data.preventDefault()
+      console.log(data.target);
+      const form = new FormData(data.target)
+      const name = form.get("name")
+      console.log(name);
+      const breed = form.get("breed")
+      console.log(breed);
+      const age = form.get("age")
+      console.log(age);
+      const species = form.get("species")
+      console.log(species);
+      const gender = form.get("gender")
+      console.log(gender);
+      const url = form.get("url")
+      
+      const cadPets = { name, breed, age, species, gender, url } 
+      console.log(cadPets);
+      alert("PET CADASTRADO COM SUCESSO!")
+      await listPosts(cadPets);
+      
+    } catch (error) {
+      console.log("DEU ALGUM ERRO");
+      
+    }
+  }
 
-  return (
+   return (
     <div >
-    <form className="container-form">
+    <form onSubmit={(data) => onSubmit(data)} className="container-form">
       <h2>Cadastre seu pet aqui.</h2>
-      <label htmlFor="nome">Nome: </label>
-      <input type="text" name="nome" placeholder=" digite o nome do seu pet" />
-      <br></br>
-      <label htmlFor="race"> Raça:   </label>
-      <input type="text" name="race" placeholder=" digite a raça do seu pet" />
-      <br></br>
-      <label htmlFor="age"> Idade:   </label>
-      <input type="text" name="age" placeholder=" digite a idade do seu pet" />
-      <br></br>
-      <label htmlFor="species"> Espécie:   </label>
-      <input type="text" name="species" placeholder=" digite a espécie do seu pet" />  
-      <br></br>
-      <label htmlFor="gender"> Sexo:   </label>
-      <input type="text" name="gender" placeholder=" digite o sexo do seu pet" />
-      <br></br>
-      <label htmlFor="url"> Url:   </label>
-      <input type="text" name="url" placeholder=" cole aqui o endereço com a foto do seu pet"/>  
-      <br></br>
-      <button className="protect">Cadastrar</button>  
+      Nome: <input type="text" name="name" placeholder=" digite o nome do seu pet" />
+      Raça: <input type="text" name="breed" placeholder=" digite a raça do seu pet" />
+      Idade: <input type="text" name="age" placeholder=" digite a idade do seu pet" />
+      <select name="species" defaultValue="Macho">
+          <option value="Cachorro">Cachorro</option>
+          <option value="Felino">Felino</option>
+          <option value="Réptil">Réptil</option>
+          <option value="Roedor">Roedor</option>
+      </select><br></br>
+      <select name="gender" defaultValue="Macho">
+          <option value="Macho">Macho</option>
+          <option value="Fêmea">Fêmea</option>
+        </select>  
+      Foto do seu Pet: <input type="url" name="url"/>
+      
+      <button className="protect" >Cadastrar</button>  
      </form>
   </div>
 

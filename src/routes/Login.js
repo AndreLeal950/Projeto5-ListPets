@@ -26,16 +26,16 @@ function Login() {
   };
 
   return (
-    <div className="container-login">
-      <form onSubmit={handleSubmit}>
+    <div >
+      <form className="container-login" onSubmit={handleSubmit}>
         
-        <label>
-          email: <br></br> <input type="email" name="email" />
+        <label className="container-login">
+          email:<input type="email" name="email" />
         </label>
-        <label><br></br>
-          senha: <br></br> <input type="password" name="password" />
-        </label><br></br>
-        <button type="submit">Enviar</button>
+        <label className="container-login">
+          senha: <input type="password" name="password" />
+        </label >
+        <button  type="submit">Enviar</button>
       </form>
     </div>
   );
