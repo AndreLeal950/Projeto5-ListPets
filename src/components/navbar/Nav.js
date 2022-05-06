@@ -6,9 +6,9 @@ const Nav = () => {
   return (
       <div className='container-nav'>
           <div className='text'>
-             PET SHOP
+             PET SHOP<br></br>
               <img className='img-nav' src= {require('../../image/Dog.png')}/>
-              AMICÃO
+              <br></br>AMICÃO
               
           </div>
       <nav>

@@ -4,24 +4,26 @@ import AuthStatus from "../AuthStatus/AuthStatus";
 import '../style/Layout.css';
 import '../style/Nav.css'
 import Nav from '../navbar/Nav'
-import Footer from '../foot/Footer'
+import Footer from '../foot/Footer';
 
 function Layout() {
   return (
-  <Fragment>
+    <Fragment>
+      
+
     <div >
       <Nav/>
     <AuthStatus />
       
         
-        <button type="submit" >
+        <button type="submit" className="button">
           <Link to="/protected">Cadastre seu Pet</Link>
         </button>
     
       
-      <Outlet />
     </div>
       <Footer />
+      <Outlet />
   </Fragment>
   );
 }

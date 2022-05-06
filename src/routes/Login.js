@@ -2,6 +2,7 @@ import React from "react";
 import "../components/style/Login.css"
 import { useAuth } from "../context/auth-context";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Input, Button } from '@chakra-ui/react'
 
 function Login() {
   const auth = useAuth();
@@ -29,13 +30,11 @@ function Login() {
     <div >
       <form className="container-login" onSubmit={handleSubmit}>
         
-        <label className="container-login">
-          email:<input type="email" name="email" />
-        </label>
-        <label className="container-login">
-          senha: <input type="password" name="password" />
-        </label >
-        <button  type="submit">Enviar</button>
+        Email: <Input placeholder='Digite seu Email' height={'40px'} width={'400px'} borderRadius={'5'} fontSize='24px'/>
+        Senha: <Input placeholder='Digite sua senha' height={'40px'} width={'400px'} borderRadius={'5'} fontSize='24px'/>
+          <Button type='submit' width={'410px'} height={'40px'} variant='solid' borderRadius={'5'} backgroundColor='grey' fontSize={'24px'}>
+         Enviar
+         </Button>
       </form>
     </div>
   );
