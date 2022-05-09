@@ -2,6 +2,7 @@ body{
     background-image:url("../../image/background.jpg");
     background-size: 100vh;
     margin: 0;    
+    display: flex;
 }
 
 button{
@@ -9,130 +10,110 @@ button{
     display: flex;
     align-items: center;
     justify-content:center;
+    font-size: 22px;
     
-    gap: 10px;
-    width: 175px;
-    height: 25px;
-    padding: 5px;
-    margin: 5px;
+    width: 360px;
+    height: 45px;
+    padding: 20px;
+    margin: 15px 0px 0px 310px; 
     color: black;
     background-color: rgb(103, 108, 109);
     border-radius: 5px;
  }
 
- @media(min-width: 90px){
 
-    .img-cards{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 500px;
-    }
-
-    .container-cards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        width: auto;    
-        height: 50%;
-     
-    }
-
+ /* @media( min-width: 468px){
     button{
-   
+
         display: flex;
         align-items: center;
         justify-content:center;
-        gap: 10px;
-        width: 365px;
-        height: 50px;
-        padding: 15px;
-        margin: 10px;
+        font-size: 25px;
+        
+        width: 368px;
+        height: 45px;
+        padding: 10px;
+        margin: 15px 0px 0px 10px; 
         color: black;
-        font-size: 24px;
         background-color: rgb(103, 108, 109);
         border-radius: 5px;
      }
     
-}   
+} 
 
-@media(min-width: 568px){
 
-    .img-cards{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 500px;
-    }
-
-    .container-cards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        width: auto;    
-        height: 50%;
-     
-    }
-
-    button{
-   
+    @media( min-width: 568px){
+        button{
         display: flex;
         align-items: center;
         justify-content:center;
-        gap: 10px;
-        width: 367px;
-        height: 48px;
-        padding: 5px;
-        margin: 0px 0px 5px 98px;
+        font-size: 25px;
+        width: 368px;
+        height: 45px;
+        padding: 10px;
+        margin: 15px 0px 0px 10px; 
         color: black;
-        background-color: rgb(111, 115, 116);
+        background-color: rgb(103, 108, 109);
         border-radius: 5px;
-     }
-}
 
 
-@media(min-width: 80px){
+        }
+    } 
 
-    .img-cards{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 200px;
+     @media( min-width: 768px){
+            button{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            font-size: 25px;
+            width: 368px;
+            height: 45px;
+            padding: 10px;
+            margin: 15px 0px 0px 100px; 
+            color: black;
+            background-color: rgb(103, 108, 109);
+            border-radius: 5px;
+
+
+        }
+    }   
+        @media( min-width: 1080px){
+            button{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            font-size: 25px;
+            width: 375px;
+            height: 45px;
+            padding: 15px;
+            margin: 25px 0px 0px 110px; 
+            color: black;
+            background-color: rgb(103, 108, 109);
+            border-radius: 5px;
+
+
+        }
     }
 
-    .container-cards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
-        width: 325%;    
-        height: 20%;
-     
-    }
-
-    button{
-   
+    @media( max-width: 1080px){
+        button{
         display: flex;
         align-items: center;
         justify-content:center;
-        gap: 10px;
-        width: 455px;
-        height: 48px;
-        padding: 5px;
-        margin: 0px 0px 10px 28px;
+        font-size: 25px;
+        width: 375px;
+        height: 45px;
+        padding: 15px;
+        margin: 5px 0px 10px 180px; 
         color: black;
-        font-size: 24px;
-        background-color: rgb(111, 115, 116);
+        background-color: rgb(103, 108, 109);
         border-radius: 5px;
-     }
+
+
+    }
 }
 
 
+
+    
+     */

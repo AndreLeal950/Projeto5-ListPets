@@ -10,15 +10,15 @@ const Cards = (props) => {
     <Fragment>
       <Container backgroundColor='grey' flexWrap={'wrap'} borderRadius='15' margin={'10'} padding='10px'>
         <Flex className='flex-cards' flexDirection={'column'} alignItems='center' gap={5} >
-              <Circle as={'img'} src={url} alt='Foto dos Animais' boxSize='300px' objectFit='cover'/>
+              <Circle as={'img'} src={url} alt='Foto dos Animais' boxSize='250px' objectFit='cover'/>
           </Flex>
           <Flex >
             <Stack>
-            <Text textAlign={'left'} fontSize='30' fontStyle={'italic'} flexDirection={'column'}>Nome: {name}</Text> 
-            <Text textAlign={'left'} fontSize='30' fontStyle={'italic'} flexDirection={'column'}>Raça: {breed}</Text>
-            <Text textAlign={'left'} fontSize='30' fontStyle={'italic'} flexDirection={'column'}>Idade: {age}</Text>
-            <Text textAlign={'left'} fontSize='30' fontStyle={'italic'} flexDirection={'column'}>Especie: {species}</Text>
-            <Text textAlign={'left'} fontSize='30' fontStyle={'italic'} flexDirection={'column'}>Sexo: {gender}</Text>
+            <Text textAlign={'left'} fontSize='26' fontStyle={'italic'} flexDirection={'column'}>Nome: {name}</Text> 
+            <Text textAlign={'left'} fontSize='26' fontStyle={'italic'} flexDirection={'column'}>Raça: {breed}</Text>
+            <Text textAlign={'left'} fontSize='26' fontStyle={'italic'} flexDirection={'column'}>Idade: {age}</Text>
+            <Text textAlign={'left'} fontSize='26' fontStyle={'italic'} flexDirection={'column'}>Especie: {species}</Text>
+            <Text textAlign={'left'} fontSize='26' fontStyle={'italic'} flexDirection={'column'}>Sexo: {gender}</Text>
             <Stat>
 
             </Stat>

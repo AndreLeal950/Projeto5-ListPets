@@ -5,10 +5,13 @@ import '../style/Nav.css'
 const Nav = () => {
   return (
       <div className='container-nav'>
+          <div>
+          <img className='img-nav' src= {require('../../image/Dog.png')}/>
+          </div>
+          
           <div className='text'>
-             PET SHOP<br></br>
-              <img className='img-nav' src= {require('../../image/Dog.png')}/>
-              <br></br>AMICÃO
+             PET SHOP  <br></br>            
+              AMICÃO
               
           </div>
       <nav>
